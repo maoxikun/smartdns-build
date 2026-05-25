@@ -18,7 +18,7 @@ jobs:
           - os: "ubuntu-24.04"
           - os: "ubuntu-24.04-arm"
     env:
-      OPENSSL_VERSION: "3.5.5"
+      OPENSSL_VERSION: "3.5.6"
       OPENSSL_PREFIX: "/usr/local/openssl"
     steps:
       - name: Build openssl
