@@ -46,7 +46,7 @@ jobs:
           sh ./smartdns/package/build-pkg.sh --platform linux --arch $(dpkg --print-architecture) --static
           strip ./smartdns/src/smartdns && mv ./smartdns/src/smartdns ./releases/smartdns-static-$(dpkg --print-architecture)
       - name: Upload files to release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: ${{ github.workspace }}/releases/*
           tag_name: ${{ github.event.inputs.release_tag }}
