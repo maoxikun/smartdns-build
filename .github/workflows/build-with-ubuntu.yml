@@ -14,7 +14,7 @@ jobs:
           - os: "ubuntu-26.04"
           - os: "ubuntu-26.04-arm"
     env:
-      OPENSSL_VERSION: "3.5.8"
+      OPENSSL_VERSION: "3.5.9"
       OPENSSL_PREFIX: "/usr/local/openssl"
     steps:
       - name: Setup node
